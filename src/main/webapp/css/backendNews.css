@@ -1,0 +1,67 @@
+body{
+background-color: rgba(128, 128, 128, 0.22);
+}
+
+table{
+table-layout: fixed;
+}
+
+#newsTable tr:not(:first-child):hover {
+	background-color: rgb(138, 226, 234);
+}
+
+td{
+white-space: nowrap;       /*禁止td換行*/
+overflow: hidden;          /*隱藏X,Y滾動條*/
+text-overflow: ellipsis;   /*將顯示不完的以...顯示*/
+font-weight: 650;
+}
+
+th {
+text-align: center;
+}
+
+.id{
+/* width: 45px; */
+width: 4%;
+}
+
+.title{
+/* width: 200px; */
+width: 18%;
+}
+
+.url{
+/* width: 500px; */
+width: 45%;
+}
+
+.imgUrl{
+/* width: 160px; */
+width: 14%;
+}
+
+.newsImg{
+width: 150px;
+height: 60px;
+border-radius: 10px;
+}
+
+.date{
+/* width: 80px; */
+width: 7%;
+}
+
+.update{
+/* width: 70px; */
+width: 6%;
+}
+
+.delete{
+/* width: 70px; */
+width: 6%;
+}
+
+.newsBtn li{
+font-size:20px;
+}

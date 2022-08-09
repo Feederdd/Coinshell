@@ -1,0 +1,23 @@
+.chart-container {
+	height: 100%;
+	width: 100%;
+}
+body {
+    margin: 0px 50px 0px 50px;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-color: rgba(128, 128, 128, 0.22)
+    /*背景色彩*/
+}
+
+#nn1,#nn2,#nn3,#nn4,#nn5,#nn6{
+  display:inline-block;
+  padding: 15px;
+}
+
+.newsimg{
+	border-radius: 10px;
+	width:545px;
+	height:250px;
+}
+

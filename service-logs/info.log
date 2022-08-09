@@ -1,0 +1,49 @@
+2022-08-10 05:36:40,103 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting CoinShellApplication using Java 11 on LAPTOP-1DO3CRFG with PID 10756 (C:\_java\workspace\CoinShell\target\classes started by User in C:\_java\workspace\CoinShell)
+2022-08-10 05:36:40,105 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-08-10 05:36:40,134 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-10 05:36:40,134 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-10 05:36:40,563 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-10 05:36:40,634 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 63 ms. Found 13 JPA repository interfaces.
+2022-08-10 05:36:41,243 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-08-10 05:36:41,251 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-10 05:36:41,252 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-10 05:36:41,252 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-08-10 05:36:41,416 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-10 05:36:41,424 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-10 05:36:41,424 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1289 ms
+2022-08-10 05:36:41,797 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-08-10 05:36:41,962 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-08-10 05:36:42,620 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-10 05:36:45,329 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2022-08-10 05:36:45,498 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-08-10 05:36:45,511 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-08-10 05:36:45,543 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/coinshell'
+2022-08-10 05:36:45,578 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started CoinShellApplication in 5.723 seconds (JVM running for 6.41)
+2022-08-10 05:36:45,665 INFO com.Group1.CoinShell.CoinShellApplication [restartedMain] Here is INFO
+2022-08-10 05:37:37,006 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-10 05:37:37,006 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-08-10 05:37:37,007 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-08-10 05:50:08,085 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-10 05:50:08,088 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2022-08-10 05:50:08,092 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2022-08-10 05:50:08,232 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting CoinShellApplication using Java 11 on LAPTOP-1DO3CRFG with PID 10756 (C:\_java\workspace\CoinShell\target\classes started by User in C:\_java\workspace\CoinShell)
+2022-08-10 05:50:08,233 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-08-10 05:50:08,342 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-10 05:50:08,365 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 22 ms. Found 13 JPA repository interfaces.
+2022-08-10 05:50:08,429 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-08-10 05:50:08,430 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-10 05:50:08,430 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-10 05:50:08,430 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-08-10 05:50:08,478 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-10 05:50:08,479 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-10 05:50:08,479 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 245 ms
+2022-08-10 05:50:08,513 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-08-10 05:50:08,527 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-08-10 05:50:08,629 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-10 05:50:10,139 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2022-08-10 05:50:10,160 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-08-10 05:50:10,163 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-08-10 05:50:10,165 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/coinshell'
+2022-08-10 05:50:10,169 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started CoinShellApplication in 1.976 seconds (JVM running for 811.001)
+2022-08-10 05:50:10,183 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-08-10 05:50:10,183 INFO com.Group1.CoinShell.CoinShellApplication [restartedMain] Here is INFO

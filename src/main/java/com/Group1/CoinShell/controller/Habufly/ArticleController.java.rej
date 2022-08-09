@@ -1,0 +1,10 @@
+diff a/src/main/java/com/Group1/CoinShell/controller/Habufly/ArticleController.java b/src/main/java/com/Group1/CoinShell/controller/Habufly/ArticleController.java	(rejected hunks)
+@@ -98,7 +98,7 @@
+ 		Integer id = atc.getId();
+ 		System.out.println(id);
+ 		model.addAttribute("id", id);
+-		return "redirect:/viewArticle/"+id+"/";
++		return "redirect:/forum/viewArticle/"+id+"/";
+ 	}
+ 	
+ 	@GetMapping("/deleteArticle/{id}")

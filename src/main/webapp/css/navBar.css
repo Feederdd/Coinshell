@@ -1,0 +1,39 @@
+/* 導覽列 效果 */
+@import
+	url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=PT+Serif&family=Quicksand&display=swap');
+
+.navbar-nav {
+	font-size: 25px;
+	font-family: 'PT Serif', serif;
+	/* font-family: 'Merriweather', serif; */
+	word-spacing: 100em;
+	letter-spacing: 0.05em;
+	column-gap: 28px;
+}
+
+.navbar-nav a {
+	text-decoration: none;
+	padding: 5px 1em;
+	position: relative;
+	transform: translateY(10px);
+}
+
+.navbar-nav a:hover {
+	transform: translateY(-10px);
+}
+
+.navbar-nav a:after {
+	content: "";
+	position: absolute;
+	left: 50px;
+	right: 50px;
+	height: 0;
+	bottom: -5px;
+	border-bottom: 1px solid #E0E0E0;
+	tranaition: .3s;
+}
+
+.navbar-nav a:hover:after {
+	left: 0px;
+	right: 0px;
+}

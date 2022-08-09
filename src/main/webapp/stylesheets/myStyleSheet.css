@@ -1,0 +1,219 @@
+﻿/*----------- Main Box -----------*/
+.main-box {
+    margin: 50px auto;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #999;
+    /*box-shadow: 2px 2px 10px #333;*/
+    border: 1px solid #fff;
+    /*border: 1px solid #444;*/
+    text-align: center;
+    font-size: 16px;
+}
+    .main-box.size-500x250 {
+        width: 500px;
+        height: 250px;
+    }
+    .main-box.size-500x350 {
+        width: 500px;
+        height: 350px;
+    }
+
+    .main-box.size-500x500 {
+        width: 500px;
+        height: 500px;
+    }
+   
+    .main-box.size-800x400 {
+        width: 800px;
+        height: 400px;
+    }
+
+    
+
+    .main-box.large-padding {
+        padding: 50px;
+    }
+/*----------- Font Size -----------*/
+.large-font {
+    font-size: 1.2em;
+}
+
+.x-large-font {
+    font-size: 1.5em;
+}
+
+.xx-large-font {
+    font-size: 2em;
+}
+/*----------- 訊息方塊 -----------*/
+.message-box {
+    color: blue;
+    padding: 10px;
+    height: 30%;
+    overflow: auto;
+}
+    .message-box.height-60percent {
+        height: 60%;
+    }
+    .message-box.height-80percent {
+        height: 80%;
+    }
+    .message-box.inline {
+        display: inline-block;
+        vertical-align:top;
+    }
+    .message-box.large-padding{
+        padding:10px 40px;
+    }
+/*----------- 字顏色 -----------*/
+.color-444 {
+    color: #444;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-blue {
+    color: blue;
+}
+/*----------- Alignment -----------*/
+.left-align {
+    text-align: left;
+}
+/*----------- <a>按鈕 -----------*/
+.a-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: white !important;
+    border-radius: 5px;
+    background-color: #444;
+}
+    .a-button.large-padding {
+        padding: 10px 40px;
+    }
+/*----------- 單層功能表 -----------*/
+ul.menubar > li.menu-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+    ul.menubar > li.menu-item a {
+        padding: 5px 10px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+    }
+
+        ul.menubar > li.menu-item a:hover {
+            background-color: rgb(110,138,195);
+            color: white;
+        }
+/*----------- 表格 -----------*/
+.table {
+    display: table;
+    margin: 3px auto;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    margin: 1px 4px;
+}
+
+    .table-cell.right-align {
+        text-align: right !important;
+    }
+
+.table-caption {
+    display: table-caption;
+    caption-side: bottom;
+}
+/*----------- 頁尾 -----------*/
+#footer {
+    margin: 10px 0 5px 0;
+    text-align: right;
+}
+/*----------- 表單 -----------*/
+.main-form {
+    font-size: 0.9em;   
+}
+
+.form-group {
+    margin: 10px;
+}
+
+    .form-group label {
+        display: block;
+    }
+
+    .form-group input {
+        font-size: 1em;
+    }
+    .form-group .form-control.height-80px{
+        font-size:1em;
+        height:80px;
+    }
+
+        .form-group .form-control {
+            display: block;
+            width: 100%;
+            height: 2em;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+            .form-group .form-control.upload {
+                display: inline-block;
+                width: 75%;
+                float: left;
+                border: 1px solid #aaa;
+            }
+
+    .form-group .preview {
+        display: inline-block;
+        width: 20%;
+        height: 110px;
+        margin-left: 5%;
+        border: 1px solid #aaa;
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    .form-group .image-box {
+        display: inline-block;
+        width: 40%;
+        height: 140px;
+        border: 1px solid #aaa;
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    .form-group .table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+        .form-group .table .td {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+    .form-group .preview img,
+    .form-group .image-box img {
+        width: 70%;
+        height: auto;
+    }
+
+form [type=button], form [type=submit], form [type=reset] {
+    padding: 5px 10px;
+    font-weight: bold;
+}

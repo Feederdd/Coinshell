@@ -1,0 +1,102 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #E5E5E5;
+}
+
+.container {
+/*     margin: 200px auto; */
+}
+
+fieldset {
+    display: none;
+}
+
+fieldset.show {
+    display: block;
+}
+
+select:focus, input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #0084CE !important;
+    outline-width: 0 !important;
+    font-weight: 400;
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.tabs {
+    margin: 2px 5px 0px 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.tabs:hover, .tabs.active {
+    border-bottom: 1px solid #2196F3;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #1565C0;
+}
+
+.box {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.modal-backdrop { 
+    background-color: #013b5cbf;
+}
+
+.line {
+    background-color: #CFD8DC;
+    height: 1px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .tabs h6 {
+        font-size: 12px;
+    }
+}
+
+/* The message box is shown when the user clicks on the password field */
+#pmessage {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    /*margin-top: 10px;*/
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+    font: bold;
+  }
+  
+  .valid:before {
+    position: relative;
+    content: "\2714";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: maroon;
+  }
+  
+  .invalid:before {
+    position: relative;
+    content: "\2718";
+  }

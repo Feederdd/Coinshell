@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+<!--<Configuration status="WARN" monitorInterval="30"> -->
+    <properties>
+        <property name="LOG_HOME">./service-logs</property>
+    </properties>
+    <Appenders>
+        <!--*********************控制檯日誌***********************-->
+        <Console name="consoleAppender" target="SYSTEM_OUT">
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY" />
+        </Console>
+
+        <!--*********************檔案日誌***********************-->
+        <!--all級別日誌-->
+        <RollingFile name="allFileAppender"
+                     fileName="${LOG_HOME}/all.log"
+                     filePattern="${LOG_HOME}/$${date:yyyy-MM}/all-%d{yyyy-MM-dd}-%i.log.gz">
+            <!--設定日誌格式-->
+            <PatternLayout>
+                <pattern>%d %p %C{} [%t] %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- 設定日誌檔案切分引數 -->
+                <!--<OnStartupTriggeringPolicy/>-->
+                <!--設定日誌基礎檔案大小，超過該大小就觸發日誌檔案滾動更新-->
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+                <!--設定日誌檔案滾動更新的時間，依賴於檔案命名filePattern的設定-->
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <!--設定日誌的檔案個數上限，不設定預設為7個，超過大小後會被覆蓋；依賴於filePattern中的%i-->
+            <DefaultRolloverStrategy max="100"/>
+        </RollingFile>
+
+        <!--debug級別日誌-->
+        <RollingFile name="debugFileAppender"
+                     fileName="${LOG_HOME}/debug.log"
+                     filePattern="${LOG_HOME}/$${date:yyyy-MM}/debug-%d{yyyy-MM-dd}-%i.log.gz">
+            <Filters>
+                <!--過濾掉info及更高階別日誌-->
+                <ThresholdFilter level="info" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+            <!--設定日誌格式-->
+            <PatternLayout>
+                <pattern>%d %p %C{} [%t] %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- 設定日誌檔案切分引數 -->
+                <!--<OnStartupTriggeringPolicy/>-->
+                <!--設定日誌基礎檔案大小，超過該大小就觸發日誌檔案滾動更新-->
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+                <!--設定日誌檔案滾動更新的時間，依賴於檔案命名filePattern的設定-->
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <!--設定日誌的檔案個數上限，不設定預設為7個，超過大小後會被覆蓋；依賴於filePattern中的%i-->
+            <DefaultRolloverStrategy max="100"/>
+        </RollingFile>
+
+        <!--info級別日誌-->
+        <RollingFile name="infoFileAppender"
+                     fileName="${LOG_HOME}/info.log"
+                     filePattern="${LOG_HOME}/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log.gz">
+            <Filters>
+                <!--過濾掉warn及更高階別日誌-->
+                <ThresholdFilter level="warn" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+            <!--設定日誌格式-->
+            <PatternLayout>
+                <pattern>%d %p %C{} [%t] %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- 設定日誌檔案切分引數 -->
+                <!--<OnStartupTriggeringPolicy/>-->
+                <!--設定日誌基礎檔案大小，超過該大小就觸發日誌檔案滾動更新-->
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+                <!--設定日誌檔案滾動更新的時間，依賴於檔案命名filePattern的設定-->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+            <!--設定日誌的檔案個數上限，不設定預設為7個，超過大小後會被覆蓋；依賴於filePattern中的%i-->
+            <!--<DefaultRolloverStrategy max="100"/>-->
+        </RollingFile>
+
+        <!--warn級別日誌-->
+        <RollingFile name="warnFileAppender"
+                     fileName="${LOG_HOME}/warn.log"
+                     filePattern="${LOG_HOME}/$${date:yyyy-MM}/warn-%d{yyyy-MM-dd}-%i.log.gz">
+            <Filters>
+                <!--過濾掉error及更高階別日誌-->
+                <ThresholdFilter level="error" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+            <!--設定日誌格式-->
+            <PatternLayout>
+                <pattern>%d %p %C{} [%t] %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- 設定日誌檔案切分引數 -->
+                <!--<OnStartupTriggeringPolicy/>-->
+                <!--設定日誌基礎檔案大小，超過該大小就觸發日誌檔案滾動更新-->
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+                <!--設定日誌檔案滾動更新的時間，依賴於檔案命名filePattern的設定-->
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <!--設定日誌的檔案個數上限，不設定預設為7個，超過大小後會被覆蓋；依賴於filePattern中的%i-->
+            <DefaultRolloverStrategy max="100"/>
+        </RollingFile>
+
+        <!--error及更高階別日誌-->
+        <RollingFile name="errorFileAppender"
+                     fileName="${LOG_HOME}/error.log"
+                     filePattern="${LOG_HOME}/$${date:yyyy-MM}/error-%d{yyyy-MM-dd}-%i.log.gz">
+            <!--設定日誌格式-->
+            <PatternLayout>
+                <pattern>%d %p %C{} [%t] %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- 設定日誌檔案切分引數 -->
+                <!--<OnStartupTriggeringPolicy/>-->
+                <!--設定日誌基礎檔案大小，超過該大小就觸發日誌檔案滾動更新-->
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+                <!--設定日誌檔案滾動更新的時間，依賴於檔案命名filePattern的設定-->
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <!--設定日誌的檔案個數上限，不設定預設為7個，超過大小後會被覆蓋；依賴於filePattern中的%i-->
+            <DefaultRolloverStrategy max="100"/>
+        </RollingFile>
+
+        <!--json格式error級別日誌-->
+        <RollingFile name="errorJsonAppender"
+                     fileName="${LOG_HOME}/error-json.log"
+                     filePattern="${LOG_HOME}/error-json-%d{yyyy-MM-dd}-%i.log.gz">
+            <JSONLayout compact="true" eventEol="true" locationInfo="true"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- 根日誌設定 -->
+        <Root level="debug">
+            <AppenderRef ref="allFileAppender" level="all"/>
+            <AppenderRef ref="consoleAppender" level="debug"/>
+            <AppenderRef ref="debugFileAppender" level="debug"/>
+            <AppenderRef ref="infoFileAppender" level="info"/>
+            <AppenderRef ref="warnFileAppender" level="warn"/>
+            <AppenderRef ref="errorFileAppender" level="error"/>
+            <AppenderRef ref="errorJsonAppender" level="error"/>
+        </Root>
+
+        <!--spring日誌-->
+        <Logger name="org.springframework" level="debug"/>
+        <!--druid資料來源日誌-->
+        <Logger name="druid.sql.Statement" level="warn"/>
+        <!-- mybatis日誌 -->
+        <Logger name="com.mybatis" level="warn"/>
+        <Logger name="org.hibernate" level="warn"/>
+        <Logger name="com.zaxxer.hikari" level="info"/>
+        <Logger name="org.quartz" level="info"/>
+        <Logger name="com.andya.demo" level="debug"/>
+    </Loggers>
+
+</Configuration>
